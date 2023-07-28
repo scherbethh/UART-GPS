@@ -64,7 +64,7 @@ err_code);
 APP_ERROR_CHECK(err_code);
 
 
-printf("\r\nUART example started.\r\n");
+printf("\r\nUART started.\r\n");
 
     
   char rx_data;
@@ -91,7 +91,7 @@ printf("\r\nUART example started.\r\n");
                         if (rx_data == '\n') {
                             nmea_buffer[nmea_index] = '\0';
 
-                            // $GPGGA satýrýnýn içindeki veriyi yazdýr
+                            // $GPGGA satirinin iÃ§indeki veriyi yazdir
                             char *data = strtok(nmea_buffer, ",");
                             int count = 0;
 
